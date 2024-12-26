@@ -11,6 +11,6 @@
     <title>$Title$</title>
 </head>
 <body>
-$END$
+$hehe chúng ta là những con gà$
 </body>
 </html>
