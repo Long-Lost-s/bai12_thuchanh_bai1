@@ -8,7 +8,7 @@
 <body>
 <h1>Danh sách khách hàng</h1>
 <p>
-  <a href="/customers?action=create">Create new customer</a>
+  <a href="/customers?action=create">Thêm khách hàng mới</a>
 </p>
 <table border="1">
   <tr>
@@ -23,8 +23,8 @@
       <td><a href="/customers?action=view&id=${customer.getId()}">${customer.getName()}</a></td>
       <td>${customer.getEmail()}</td>
       <td>${customer.getAddress()}</td>
-      <td><a href="/customers?action=edit&id=${customer.getId()}">Sửa thông tin</a></td>
-      <td><a href="/customers?action=delete&id=${customer.getId()}">Xóa thông tin</a></td>
+      <td><a class="edit" href="/customers?action=edit&id=${customer.getId()}">Sửa thông tin</a></td>
+      <td><a class="delete" href="/customers?action=delete&id=${customer.getId()}">Xóa thông tin</a></td>
     </tr>
   </c:forEach>
 </table>

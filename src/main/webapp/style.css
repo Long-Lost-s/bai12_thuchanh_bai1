@@ -98,3 +98,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.delete {
+    color: red;
+}
+
+.delete:hover {
+    opacity: 0.7;
+}
+
+.edit:hover {
+    opacity: 0.7;
+}
