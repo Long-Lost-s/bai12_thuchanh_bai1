@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-<h1>Customers</h1>
+<h1>Danh sách khách hàng</h1>
 <p>
   <a href="/customers?action=create">Create new customer</a>
 </p>
@@ -23,8 +23,8 @@
       <td><a href="/customers?action=view&id=${customer.getId()}">${customer.getName()}</a></td>
       <td>${customer.getEmail()}</td>
       <td>${customer.getAddress()}</td>
-      <td><a href="/customers?action=edit&id=${customer.getId()}">edit</a></td>
-      <td><a href="/customers?action=delete&id=${customer.getId()}">delete</a></td>
+      <td><a href="/customers?action=edit&id=${customer.getId()}">Sửa thông tin</a></td>
+      <td><a href="/customers?action=delete&id=${customer.getId()}">Xóa thông tin</a></td>
     </tr>
   </c:forEach>
 </table>
